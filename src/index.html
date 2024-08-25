@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> A fully responsive Burger website</title>
+    <link href="output.css" rel="stylesheet">
+    <!----------------------------------swiper js---------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    
+
+</head>
+<body>
+    <!-------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------->
+    <header >
+    
+        <nav class=" container fixed top-0 w-full left-0 h-14 z-50 bg-blue-900 flex justify-between items-center">
+           <a href="#" class=" relative text-3xl uppercase px-4 font-oswald ">
+            Bur<span class="text-yellow-400 ">Gur</span>
+           </a>
+            <div class="hidden  absolute top-0 left-0 w-full py-14 bg-blue-900 border-b border-yellow-400 
+                 md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+                <ul class="flex flex-col text-center gap-5 font-semibold md:flex-row ">
+                    <li>
+                        <a href="#" class="hover:text-yellow-400 ease-in duration-200 nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"  class="hover:text-yellow-400 ease-in duration-200 nav__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#"  class="hover:text-yellow-400 ease-in duration-200 nav__link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#"  class="hover:text-yellow-400 ease-in duration-200 nav__link">Review</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-yellow-400 ease-in duration-200 nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden"  id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+               
+            </div>
+            <div class=" flex items-center gap-5 cursor-pointer text-xl px-4">
+                
+                <div id="hamburger" class="md:hidden">
+                    <i class="ri-menu-2-line"></i>
+                </div>
+            </div>  
+            
+        </nav>
+        <div class="separator"></div>
+    </header>
+    
+    <!--------------------------------------------------------------------------HOME---------------------------------------------------------------------------------->
+    <main>
+        <section id="home" >
+            <div class="container flex flex-col items-center gap-10 md:flex-row ">
+                <div class="mx-auto mt-12 md:basis-1/2 lg:basis-2/5  lg:-my-20 hover:animate-movingY md:animate-movingY" >
+                    <img src="./img/home-image.png" alt="home-image" class="w-60 md:w-10/12 ">
+                </div>
+                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                    <h1 class="home__title">HAPPY TUMMY WITH TASTY BURGERS</h1>
+                    <div class="separator mx-auto md:mx-0"></div>
+                    <p class="paragraph px-2">
+                        "Indulge in our mouth-watering, handcrafted burgers, made with the freshest ingredients and seasoned to perfection.
+                         Each bite offers a burst of rich flavors, with juicy patties, melted cheese, and crispy, fresh toppings. 
+                         Our burgers are a delicious blend of tradition and creativity, offering a taste that’s both familiar and unique.
+                          Perfectly grilled and served on a soft, toasted bun, these burgers are the ultimate comfort food.
+                           Satisfy your cravings and experience burger bliss today!"
+                    </p>
+                    <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+                        <div class="text-center">
+                            <i class="fa-solid fa-utensils text-yellow-400 text-4xl"></i>
+                            <br/>
+                            Delicious
+                        </div>
+                        
+                        <div class="text-center">
+                            <i class="fa-solid fa-droplet text-yellow-400 text-4xl"></i>
+                            <br/>
+                            Fresh
+                        </div>
+                        
+                        <div class="text-center">
+                            <i class="fa-brands fa-envira text-yellow-400 text-4xl"></i>
+                            <br/>
+                            Organic
+                        </div>
+                        
+                    </div >
+                    <a href="#" class=" btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!---------------------------------------------------------------------------CATAGORY----------------------------------------------------------------------------->
+    <section id="category">
+        <div class="container flex flex-col gap-5 px-2 md:flex-row ">
+            <!------------card1------------>
+            <div class="bg-yellow-400 flex py-3 rounded-lg overflow-hidden md:flex-1">
+                <div class="basis-1/3 relative">
+                    <img src="./img/burger-1.png" alt="catagory1" class="absolute w-28 -bottom-4 -left-4"></div>
+                <div>
+                    <div class="mb-2">
+                        <h4 class="card__title">Food</h4>
+                        <p class="text-xs">More stuffing,More tasty</p>
+                    </div>
+                    <a href="#" class="text-black font-semibold cursor-pointer">Buy Online</a>
+                </div>
+            </div>
+
+            <!---------card2-------------->
+            <div class="bg-red-500 flex py-3 rounded-lg overflow-hidden md:flex-1">
+                <div class="basis-1/3 relative">
+                    <img src="./img/snack-1.png" alt="catagory1" class="absolute w-28 -bottom-4 -left-4"></div>
+                <div>
+                    <div class="mb-2">
+                        <h4 class="card__title">Snack</h4>
+                        <p class="text-xs">Take a break,with our Snacks</p>
+                    </div>
+                    <a href="#" class="text-black font-semibold cursor-pointer">Buy Online</a>
+                </div>
+            </div>
+            <!-----------Card3------------>
+            <div class="bg-green-700 flex py-3 rounded-lg overflow-hidden md:flex-1">
+                <div class="basis-1/3 relative">
+                    <img src="./img/beverage-2.png" alt="catagory1" class="absolute w-28 -bottom-4 -left-4"></div>
+                <div>
+                    <div class="mb-2">
+                        <h4 class="card__title">Beverage</h4>
+                        <p class="text-xs">Drinks that refreshes you</p>
+                    </div>
+                    <a href="#" class="text-black font-semibold cursor-pointer">Buy Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------------promo--------------------------------------------------------------------------->
+    <section id="promo">
+        <div class="container flex flex-col gap-5 p-3 lg:gap-10 lg:flex-row ">
+            <!------------card1------------>
+            <div class="bg-blue-700 flex flex-col p-5 rounded-lg md:flex md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                <img src="img/promo-1.png" alt="promo img" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+            
+                <div class="space-y-2 pt-5 md:pt-0">
+                    <p class="text-xs text-yellow-400">Payday Promo</p>
+                    <h3 class="card__title">GET A 10% DISCOUNT ON PAYDAY WEEK</h3>
+                    <p class="paragraph">"Juicy Burgers, Unbeatable Flavors—Order Now and Satisfy Your Cravings!"</p>
+                    <a href="#" class="text-xs text-yellow-400">Buy Online</a>
+                </div>
+            </div>
+             <!------------card2------------>
+             <div class="bg-blue-700 flex flex-col p-5 rounded-lg md:flex md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                <img src="img/promo-2.png" alt="promo img" class="w-40 mx-auto hover:animate-movingY  md:mx-5">
+            
+                <div class="space-y-2 pt-5 md:pt-0">
+                    <p class="text-xs text-yellow-400">Payday Promo</p>
+                    <h3 class="card__title">GET A 10% DISCOUNT ON PAYDAY WEEK</h3>
+                    <p class="paragraph">"Chill out with our refreshing, ice-cold beverages, perfect for any occasion."</p>
+                    <a href="#" class="text-xs text-yellow-400">Buy Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------------------------------------------About------------------------------------------------------------------------------->
+    <section id="about">
+        <div class="container flex flex-col gap-10 p-3 md:flex-row">
+
+            <div class="flex-1">
+                <img src="img/about.jpg" alt="about img" class="rounded-lg">
+            </div>
+
+            <div class="flex-1">
+                
+
+                <h2 class="section__title">FIND FOOD AND DRINKS,ALL-IN-ONE PLACE FOR YOUR BEST TASTE</h2>
+                <div class="separator"></div>
+                <p class="paragraph">Join our burger community online and indulge in a culinary adventure where each bite brings you closer to burger bliss with fresh,
+                     high-quality ingredients.</p>
+                <ul class="grid grid-cols-2 py-5 space-y-1">
+                    <li class="text-xs text-yellow-50">
+                        <i class="fa-solid fa-check text-yellow-400"></i>
+                        best Price</li>
+                    <li class="text-xs text-yellow-50">
+                        <i class="fa-solid fa-check text-yellow-400"></i>
+                        Fresh Ingredients</li>
+                    <li class="text-xs text-yellow-50">
+                        <i class="fa-solid fa-check text-yellow-400"></i>
+                        Best Service</li>
+                    <li class="text-xs text-yellow-50">
+                        <i class="fa-solid fa-check text-yellow-400"></i>
+                        Health Protocol</li>
+                    
+                </ul>
+                <a href="#" class="btn btn-primary">About US</a>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------------------------------Menu------------------------------------------------------------------------------>
+    <section id="menu">
+        <div class="container ">
+            <div class="max-w-md mx-auto text-center">
+                <h2 class="section__title">OUR BEST MENU</h2>
+                <div class="separator mx-auto"></div>
+                <p class="paragraph">"Explore our extensive burger menu online and customize your ideal burger with a variety of premium ingredients,
+                     all delivered right to your doorstep."</p>
+                <div class="tabs_wrap">
+                    <ul class="flex flex-wrap justify-center gap-3 py-10">
+                        <li data-tabs="all" class="btn bg-blue-700 active">All</li>
+                        <li data-tabs="food" class="btn bg-blue-700">Food</li>
+                        <li data-tabs="snack" class="btn bg-blue-700">Snack</li>
+                        <li data-tabs="beverage" class="btn bg-blue-700">Beverage</li>
+                    </ul>
+                </div>
+            </div>
+            <div >
+                <ul class=" grid grid-cols-1 gap-5 p-3 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+                    <!----------food----------->
+                    <li class="item__wrap food">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-1.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">REGULAR CLASSIC BURGER</h4>
+                                <p class="paragraph">Hot crisp,Masaladar,cheezy and falvourful burgers</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.80</p>
+                        </div>
+                    </li>
+
+                    <li class="item__wrap food">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-2.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">HAMBURGER</h4>
+                                <p class="paragraph">Hot crisp,Masaladar,cheezy and falvourful burgers.</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.160</p>
+                        </div>
+                    </li>
+
+                    <li class="item__wrap food">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-3.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">REGULAR CHICKEN BURGER</h4>
+                                <p class="paragraph">Hot crisp,Masaladar,cheezy and falvourful burgers.</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.120</p>
+                        </div>
+                    </li>
+
+                    <li class="item__wrap food">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-4.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">REGULAR EGG BURGER</h4>
+                                <p class="paragraph">Hot crisp,Masaladar,cheezy and falvourful burgers.</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.100</p>
+                        </div>
+                    </li>
+
+                    <li class="item__wrap food">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/burger-5.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">SPECIAL BURGER</h4>
+                                <p class="paragraph">Hot crisp,Masaladar,cheezy and falvourful burgers.</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.180</p>
+                        </div>
+                    </li>
+                    <!--------Snacks-------->
+                    <li class="item__wrap snack">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-1.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">FRENCH FRIES</h4>
+                                <p class="paragraph">Enjoy our tasty and fresh snacks.The mouth watering taste you feel with each bite</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.60</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap snack">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-2.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title"> CHEEZY FRENCH FRIES</h4>
+                                <p class="paragraph">Enjoy our tasty and fresh snacks.The mouth watering taste you feel with each bite</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.80</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap snack">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-3.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">CLASSIC SANDWICH</h4>
+                                <p class="paragraph">Enjoy our tasty and fresh snacks.The mouth watering taste you feel with each bite</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.50</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap snack">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-4.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">CHILLI POTATO CHIPS</h4>
+                                <p class="paragraph">Enjoy our tasty and fresh snacks.The mouth watering taste you feel with each bite</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.60</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap snack">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-5.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">MASALA FRIES WITH DIP</h4>
+                                <p class="paragraph">Enjoy our tasty and fresh snacks.The mouth watering taste you feel with each bite</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.100</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap snack">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/snack-6.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">CARAMALIZED POPCORN</h4>
+                                <p class="paragraph">Enjoy our tasty and fresh snacks.The mouth watering taste you feel with each bite</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.70</p>
+                        </div>
+                    </li>
+                    <!----------------BEVERAGES-------------->
+                    <li  class="item__wrap beverage">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-1.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">BANANA SHAKE</h4>
+                                <p class="paragraph">Drink that is suitable to satisfy your trirst .</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.140</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap beverage">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-2.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">MIX FRUIT JUICE</h4>
+                                <p class="paragraph">Drink that is suitable to satisfy your trirst .</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.140</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap beverage">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-3.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">STRAWBERRY JUICE</h4>
+                                <p class="paragraph">Drink that is suitable to satisfy your trirst .</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.100</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap beverage">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-4.png" alt="menu img" class="w-32 hover:scale-110 ease-linear duration-200 md:w-36 lg:w-20">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">MANGO SHAKE</h4>
+                                <p class="paragraph">Drink that is suitable to satisfy your trirst .</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.140</p>
+                        </div>
+                    </li>
+                    <li  class="item__wrap beverage">
+                        <div class="h-56 grid place-items-center bg-blue-700 rounded-3xl hover:bg-yellow-400 ease-linear duration-200 lg:h-40">
+                            <img src="img/beverage-5.png" alt="menu img" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                        </div>
+                        <div class="pt-5">
+                            <div class="mb-2">
+                                <h4 class="card__title">WATERMELON SHAKE</h4>
+                                <p class="paragraph">Drink that is suitable to satisfy your trirst .</p>
+                            </div>
+                            <p class="text-yellow-400">Rs.80</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------------Review--------------------------------------------------------------------->
+    <section id="review" class="bg-blue-700 py-20 ">
+        <div class="container p-3">
+            <div class="max-w-md mx-auto text-center mb-6">
+                <h2 class="section__title">CUSTOMER REVIEW</h2>
+                <div class="separator mx-auto"></div>
+                <p class="paragraph">"Explore our extensive burger menu online and customize your ideal burger with a variety of premium ingredients,
+                 all delivered right to your doorstep."</p>
+            </div>
+        <div class="swiper py-10 ">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="flex flex-col  gap-5 bg-blue-900 rounded-lg p-6">
+                        <p class="paragraph">
+                            "The best burgers I've ever had! The flavors are incredible, and the ingredients are always fresh. 
+                            The classic burger with extra cheese is my go-to. Highly recommend!"
+                        </p>
+                        
+                            <div class="flex items-center justify-between">
+                                <img src="img/review-1.jpg" alt="review img" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">Fush jain</p>
+                                    <p class="paragraph">Designer</p>
+                                    <i class="fa-solid fa-quote-right text-4xl text-yellow-400 ml-auto"></i>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </li>
+
+                <li class="swiper-slide">
+                    <div class="flex flex-col  gap-5 bg-blue-900 rounded-lg p-6">
+                        <p class="paragraph">
+                            "I tried the special burger, and it was amazing. The balance of spices and the perfectly grilled patty made it unforgettable.
+                             Will definitely order again!"
+                        </p>
+                        
+                            <div class="flex items-center justify-between">
+                                <img src="img/review-2.jpg" alt="review img" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">Amrita chain</p>
+                                    <p class="paragraph">Designer</p>
+                                    <i class="fa-solid fa-quote-right text-4xl text-yellow-400 ml-auto"></i>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </li>
+
+                <li class="swiper-slide">
+                    <div class="flex flex-col  gap-5 bg-blue-900 rounded-lg p-6">
+                        <p class="paragraph">
+                            "Great burgers with a lot of variety. The delivery was fast, and everything arrived hot and fresh.
+                             The French fries were a bit salty for my taste, but overall a great experience!"
+
+
+                        </p>
+                        
+                            <div class="flex items-center justify-between">
+                                <img src="img/review-3.jpg" alt="review img" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">Edward rise</p>
+                                    <p class="paragraph">Designer</p>
+                                    <i class="fa-solid fa-quote-right text-4xl text-yellow-400 ml-auto"></i>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </li>
+
+                <li class="swiper-slide">
+                    <div class="flex flex-col  gap-5 bg-blue-900 rounded-lg p-6">
+                        <p class="paragraph">
+                            "The veggie burger was delicious! It's hard to find a place that gets it right, but they nailed it.
+                             The toppings were fresh, and the bun was soft yet held together well. Will be coming back for more!"
+
+
+
+
+                        </p>
+                        
+                            <div class="flex items-center justify-between">
+                                <img src="img/review-4.jpg" alt="review img" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">Rose millate</p>
+                                    <p class="paragraph">Designer</p>
+                                    <i class="fa-solid fa-quote-right text-4xl text-yellow-400 ml-auto"></i>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </li>
+
+                <li class="swiper-slide">
+                    <div class="flex flex-col  gap-5 bg-blue-900 rounded-lg p-6">
+                        <p class="paragraph">
+                            "The banana shake and burger combo is out of this world. Perfect for a quick lunch or a late-night craving. 
+                            The customer service was also top-notch. Keep up the great work!"
+
+
+
+
+                        </p>
+                        
+                            <div class="flex items-center justify-between">
+                                <img src="img/review-5.jpg" alt="review img" class="w-12 h-12 rounded-full">
+                                <div class="ml-2">
+                                    <p class="font-oswald uppercase">Arial swift</p>
+                                    <p class="paragraph">Designer</p>
+                                    <i class="fa-solid fa-quote-right text-4xl text-yellow-400 ml-auto"></i>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="swiper-pagination "></div>
+        </div>   
+        
+        
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------CONTACT---------------------------------------------------------------------->
+    <section id="contact" class="bg-yellow-400 p-3 ">
+        <div class="container flex flex-col gap-10 md:h-56 md:items-center md:flex-row">
+            <div class="space-x-4 md:flex-1 ">
+                <h2 class="section__title text-black mb-4 ml-2">GET EXCLUSIVE UPDATE</h2>
+                <p class="text-sm ">"Got a craving or a question? Reach out to us!"
+                    "We're here to serve you the best burgers in town. Contact us today!"</p>
+            </div>
+            <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+                <input type="email" placeholder="Email address" class="p-2 text-black rounded-lg outline-none md:w-full">
+                <a href="" class="flex items-center justify-center gap-2 btn bg-black hover:opacity-75">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Subscribe
+                    
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="container p-3">
+            <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+                <li>
+                    <div class="space-y-3">
+                        <a href="" class="text-4xl font-oswald uppercase">
+                            Bur<span class="text-yellow-400">GER</span>
+                        </a>
+                        <p class="text-xs">
+                            "Visit us at [**************] or call us at [000-000-0000].
+                             We’re here to satisfy your burger cravings!"
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex flex-col gap-3">
+                        <h3 class=" text-lg uppercase font-oswald">support</h3>
+                        <a href="" class="text-xs hover:text-yellow-400">FAQ</a>
+                        <a href="" class="text-xs hover:text-yellow-400">Privacy Policy</a>
+                        <a href="" class="text-xs hover:text-yellow-400">Term & Condition</a>
+                        <a href="" class="text-xs hover:text-yellow-400">Contact</a>
+                    </div>
+                </li>
+                <li class="space-y-8">
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">
+                            phone
+                        </h3>
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-phone text-lg text-yellow-400"></i>
+                            +1 000 000 0000
+
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">
+                            e-mail
+                        </h3>
+                        <p class="flex items-center gap-2 ">
+                            <i class="fa-solid fa-envelope text-lg text-yellow-400"></i>
+                            burger.info@email.com
+
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">
+                            address
+                        </h3>
+                        <p class="flex items-center gap-2 ">
+                            <i class="fa-solid fa-location-dot  text-lg text-yellow-400"></i>
+                            Address goes here
+
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">
+                            follow us
+                        </h3>
+                       <div class="space-x-3">
+                        <i class="fa-brands fa-facebook-f text-lg text-yellow-400 hover:translate-y-1 ease-in duration-200"></i>
+                        <i class="fa-brands fa-twitter text-lg text-yellow-400 hover:translate-y-1 ease-in duration-200" ></i>
+                        <i class="fa-brands fa-square-instagram text-lg text-yellow-400 hover:translate-y-1 ease-in duration-200"></i>
+                       </div>
+                        
+                    </div>
+                </li>
+            </ul>
+            <div class="flex flex-col item-center border-t border-blue-700 py-5 md:flex-row md:justify-center ">
+                <p class="paragraph">Copyright .All rights reserved</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <!----------------------------------------------------------------------------Swiper js------------------------------------------------------------>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false // Fixed typo here
+            },
+            // Enable pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // This makes the dots clickable, optional
+            },
+            grabCursor: true,
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                }
+            } // Added missing bracket here
+        });
+    </script>
+    
+    <style>
+        .swiper-pagination {
+            position: relative; /* Ensure proper positioning context */
+            top: 15px; /* Adjust this value to move the dots up or down */
+            text-align: center; /* Ensure the pagination dots are centered */
+        }
+    </style>
+
+    <!----------------------------------------------------------------------scroll revel------------------------------------------------------------->
+
+
+    <!-------------------------------------------------------------------Main Js------------------------------------------------------------------>
+    <script src="main.js"></script>
+</body>
+</html>
